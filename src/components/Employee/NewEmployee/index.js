@@ -31,7 +31,9 @@ export default function NewEmployee(props) {
             setProgress({loading: false, data: false, error: true})
         }
     }
-    disabled = (!Object.values(validation).every(e => e)) && (!Object.values(formData).every(e => Boolean(e)))
+
+
+    disabled = !(Object.values(validation).every(e => e) && Object.values(formData).every(e => Boolean(e)))
     const handleChange = (e) => {
         setFormData(e);
         setValidation(e.target.name, e.target.value);
