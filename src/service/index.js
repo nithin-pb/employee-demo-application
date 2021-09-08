@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = 'https://secret-cove-15132.herokuapp.com/'
+const BASE_URL = 'https://secret-cove-15132.herokuapp.com'
 export default {
     employee() {
         return {
