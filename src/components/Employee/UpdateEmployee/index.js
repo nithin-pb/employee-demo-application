@@ -66,7 +66,7 @@ export default function UpdateEmployee(props) {
     return (
         <Paper variant={'outlined'}>
             <Box m={3}>
-                <Title title={'Update User'} subTitle={'update user with id xx6666'}/>
+                <Title title={'Update User'} subTitle={`update user with id ${state.employeeId}`}/>
             </Box>
             <CustomAlert open={apiProgress.error} severity={'error'}
                          message={'Unable to load data for the employee'}/>
